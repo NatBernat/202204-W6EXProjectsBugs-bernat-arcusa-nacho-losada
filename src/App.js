@@ -13,7 +13,6 @@ import { loadProjectsThunk } from "./redux/thunks/projectsThunks";
 function App() {
   const { loading, modal, theme } = useSelector(({ ui }) => ui);
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(loadProjectsThunk());
   }, [dispatch]);
